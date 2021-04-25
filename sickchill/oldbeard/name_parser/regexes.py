@@ -114,6 +114,7 @@ normal_regexes = [
         # Show Name - 2010-11-23 - Ep Name
         r"""
      ^(?P<series_name>.*?(UEFA|MLB|ESPN|WWE|MMA|UFC|TNA|EPL|NASCAR|NBA|NFL|NHL|NRL|PGA|SUPER LEAGUE|FORMULA|FIFA|NETBALL|MOTOGP).*?)[. _-]+
+     ((?P<series_num>\d{1,3})[. _-]+)?
      ((?P<extra_info>.+?)((?<![. _-])
      (?<!WEB)-(?P<release_group>[^ -]+([. _-]\[.*\])?))?)?$
      """,
